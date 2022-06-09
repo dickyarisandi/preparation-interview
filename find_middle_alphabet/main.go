@@ -20,16 +20,13 @@ import (
 
 func main() {
 	alphabets := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	firstAlphabet := "S"
+	firstAlphabet := "Y"
 	lastAlphabet := "Z"
 
 	fmt.Println(middleAlphabet(alphabets, firstAlphabet, lastAlphabet))
 }
 
 func middleAlphabet(alphabets, firstAlphabet, lastAlphabet string) string {
-	firstAlphabet = strings.ToUpper(firstAlphabet)
-	lastAlphabet = strings.ToUpper(lastAlphabet)
-
 	first := float64(strings.Index(alphabets, firstAlphabet))
 	last := float64(strings.Index(alphabets, lastAlphabet))
 
